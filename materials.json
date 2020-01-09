@@ -1,0 +1,1203 @@
+[
+  [
+    "ShadowMaterialParameters",
+    {
+      "color": {
+        "type": [
+          "Color",
+          "TSStringKeyword",
+          "TSNumberKeyword"
+        ],
+        "optional": true
+      }
+    }
+  ],
+  [
+    "SpriteMaterialParameters",
+    {
+      "color": {
+        "type": [
+          "Color",
+          "TSStringKeyword",
+          "TSNumberKeyword"
+        ],
+        "optional": true
+      },
+      "map": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "alphaMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "rotation": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "sizeAttenuation": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "",
+    {}
+  ],
+  [
+    "ShaderMaterialParameters",
+    {
+      "defines": {
+        "type": "TSAnyKeyword",
+        "optional": true
+      },
+      "uniforms": {
+        "type": "TSAnyKeyword",
+        "optional": true
+      },
+      "vertexShader": {
+        "type": "TSStringKeyword",
+        "optional": true
+      },
+      "fragmentShader": {
+        "type": "TSStringKeyword",
+        "optional": true
+      },
+      "linewidth": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "wireframe": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "wireframeLinewidth": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "lights": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "clipping": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "skinning": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "morphTargets": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "morphNormals": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "extensions": {
+        "type": "TSTypeLiteral",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "PointsMaterialParameters",
+    {
+      "color": {
+        "type": [
+          "Color",
+          "TSStringKeyword",
+          "TSNumberKeyword"
+        ],
+        "optional": true
+      },
+      "map": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "alphaMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "size": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "sizeAttenuation": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "MeshPhysicalMaterialParameters",
+    {
+      "reflectivity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "clearcoat": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "clearcoatRoughness": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "sheen": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "clearcoatNormalScale": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "clearcoatNormalMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      }
+    }
+  ],
+  [
+    "MeshStandardMaterialParameters",
+    {
+      "color": {
+        "type": [
+          "Color",
+          "TSStringKeyword",
+          "TSNumberKeyword"
+        ],
+        "optional": true
+      },
+      "roughness": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "metalness": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "map": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "lightMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "lightMapIntensity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "aoMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "aoMapIntensity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "emissive": {
+        "type": [
+          "Color",
+          "TSStringKeyword",
+          "TSNumberKeyword"
+        ],
+        "optional": true
+      },
+      "emissiveIntensity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "emissiveMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "bumpMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "bumpScale": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "normalMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "normalMapType": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "normalScale": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "displacementMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "displacementScale": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "displacementBias": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "roughnessMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "metalnessMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "alphaMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "envMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "envMapIntensity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "refractionRatio": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "wireframe": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "wireframeLinewidth": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "skinning": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "morphTargets": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "morphNormals": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "MeshPhongMaterialParameters",
+    {
+      "color": {
+        "type": [
+          "Color",
+          "TSStringKeyword",
+          "TSNumberKeyword"
+        ],
+        "optional": true
+      },
+      "specular": {
+        "type": [
+          "Color",
+          "TSStringKeyword",
+          "TSNumberKeyword"
+        ],
+        "optional": true
+      },
+      "shininess": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "opacity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "map": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "lightMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "lightMapIntensity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "aoMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "aoMapIntensity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "emissive": {
+        "type": [
+          "Color",
+          "TSStringKeyword",
+          "TSNumberKeyword"
+        ],
+        "optional": true
+      },
+      "emissiveIntensity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "emissiveMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "bumpMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "bumpScale": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "normalMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "normalMapType": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "normalScale": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "displacementMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "displacementScale": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "displacementBias": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "specularMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "alphaMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "envMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "combine": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "reflectivity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "refractionRatio": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "wireframe": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "wireframeLinewidth": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "wireframeLinecap": {
+        "type": "TSStringKeyword",
+        "optional": true
+      },
+      "wireframeLinejoin": {
+        "type": "TSStringKeyword",
+        "optional": true
+      },
+      "skinning": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "morphTargets": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "morphNormals": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "MeshToonMaterialParameters",
+    {
+      "gradientMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      }
+    }
+  ],
+  [
+    "MeshNormalMaterialParameters",
+    {
+      "bumpMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "bumpScale": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "normalMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "normalMapType": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "normalScale": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "displacementMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "displacementScale": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "displacementBias": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "wireframe": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "wireframeLinewidth": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "skinning": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "morphTargets": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "morphNormals": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "MeshLambertMaterialParameters",
+    {
+      "color": {
+        "type": [
+          "Color",
+          "TSStringKeyword",
+          "TSNumberKeyword"
+        ],
+        "optional": true
+      },
+      "emissive": {
+        "type": [
+          "Color",
+          "TSStringKeyword",
+          "TSNumberKeyword"
+        ],
+        "optional": true
+      },
+      "emissiveIntensity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "emissiveMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "map": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "lightMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "lightMapIntensity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "aoMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "aoMapIntensity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "specularMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "alphaMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "envMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "combine": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "reflectivity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "refractionRatio": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "wireframe": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "wireframeLinewidth": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "wireframeLinecap": {
+        "type": "TSStringKeyword",
+        "optional": true
+      },
+      "wireframeLinejoin": {
+        "type": "TSStringKeyword",
+        "optional": true
+      },
+      "skinning": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "morphTargets": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "morphNormals": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "MeshDepthMaterialParameters",
+    {
+      "alphaMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "depthPacking": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "displacementMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "displacementScale": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "displacementBias": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "wireframe": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "wireframeLinewidth": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "MeshDistanceMaterialParameters",
+    {
+      "alphaMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "displacementMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "displacementScale": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "displacementBias": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "farDistance": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "nearDistance": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "referencePosition": {
+        "type": "TSTypeReference",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "MeshBasicMaterialParameters",
+    {
+      "color": {
+        "type": [
+          "Color",
+          "TSStringKeyword",
+          "TSNumberKeyword"
+        ],
+        "optional": true
+      },
+      "opacity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "map": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "aoMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "aoMapIntensity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "specularMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "alphaMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "envMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "combine": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "reflectivity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "refractionRatio": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "wireframe": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "wireframeLinewidth": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "wireframeLinecap": {
+        "type": "TSStringKeyword",
+        "optional": true
+      },
+      "wireframeLinejoin": {
+        "type": "TSStringKeyword",
+        "optional": true
+      },
+      "skinning": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "morphTargets": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "MeshMatcapMaterialParameters",
+    {
+      "color": {
+        "type": [
+          "Color",
+          "TSStringKeyword",
+          "TSNumberKeyword"
+        ],
+        "optional": true
+      },
+      "matcap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "map": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "bumpMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "bumpScale": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "normalMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "normalMapType": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "normalScale": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "displacementMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "displacementScale": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "displacementBias": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "alphaMap": {
+        "type": [
+          "Texture",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "skinning": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "morphTargets": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "morphNormals": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "LineDashedMaterialParameters",
+    {
+      "color": {
+        "type": [
+          "Color",
+          "TSStringKeyword",
+          "TSNumberKeyword"
+        ],
+        "optional": true
+      },
+      "linewidth": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "scale": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "dashSize": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "gapSize": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "LineBasicMaterialParameters",
+    {
+      "color": {
+        "type": [
+          "Color",
+          "TSStringKeyword",
+          "TSNumberKeyword"
+        ],
+        "optional": true
+      },
+      "linewidth": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "linecap": {
+        "type": "TSStringKeyword",
+        "optional": true
+      },
+      "linejoin": {
+        "type": "TSStringKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "MaterialParameters",
+    {
+      "alphaTest": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "blendDst": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "blendDstAlpha": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "blendEquation": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "blendEquationAlpha": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "blending": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "blendSrc": {
+        "type": [
+          "BlendingSrcFactor",
+          "BlendingDstFactor"
+        ],
+        "optional": true
+      },
+      "blendSrcAlpha": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "clipIntersection": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "clippingPlanes": {
+        "type": "TSArrayType",
+        "optional": true
+      },
+      "clipShadows": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "colorWrite": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "depthFunc": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "depthTest": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "depthWrite": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "fog": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "name": {
+        "type": "TSStringKeyword",
+        "optional": true
+      },
+      "opacity": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "polygonOffset": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "polygonOffsetFactor": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "polygonOffsetUnits": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "precision": {
+        "type": [
+          "TSLiteralType",
+          "TSLiteralType",
+          "TSLiteralType",
+          "TSNullKeyword"
+        ],
+        "optional": true
+      },
+      "premultipliedAlpha": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "dithering": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "flatShading": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "side": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "shadowSide": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "toneMapped": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "transparent": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "vertexColors": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "vertexTangents": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "visible": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "stencilWrite": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "stencilFunc": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "stencilRef": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "stencilMask": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "stencilFail": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "stencilZFail": {
+        "type": "TSTypeReference",
+        "optional": true
+      },
+      "stencilZPass": {
+        "type": "TSTypeReference",
+        "optional": true
+      }
+    }
+  ]
+]

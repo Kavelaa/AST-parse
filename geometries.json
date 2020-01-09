@@ -1,0 +1,472 @@
+[
+  [
+    "WireframeGeometry",
+    {
+      "geometry": {
+        "type": [
+          "Geometry",
+          "BufferGeometry"
+        ],
+        "optional": false
+      }
+    }
+  ],
+  [
+    "ParametricGeometry",
+    {
+      "func": {
+        "type": "TSFunctionType",
+        "optional": false
+      },
+      "slices": {
+        "type": "TSNumberKeyword",
+        "optional": false
+      },
+      "stacks": {
+        "type": "TSNumberKeyword",
+        "optional": false
+      }
+    }
+  ],
+  [
+    "TetrahedronGeometry",
+    {
+      "radius": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "detail": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "OctahedronGeometry",
+    {
+      "radius": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "detail": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "IcosahedronGeometry",
+    {
+      "radius": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "detail": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "DodecahedronGeometry",
+    {
+      "radius": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "detail": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "PolyhedronGeometry",
+    {
+      "vertices": {
+        "type": "TSArrayType",
+        "optional": false
+      },
+      "indices": {
+        "type": "TSArrayType",
+        "optional": false
+      },
+      "radius": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "detail": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "TubeGeometry",
+    {
+      "path": {
+        "type": "TSTypeReference",
+        "optional": false
+      },
+      "tubularSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "radius": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "radiusSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "closed": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "TorusKnotGeometry",
+    {
+      "radius": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "tube": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "tubularSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "radialSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "p": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "q": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "TorusGeometry",
+    {
+      "radius": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "tube": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "radialSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "tubularSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "arc": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "TextGeometry",
+    {
+      "text": {
+        "type": "TSStringKeyword",
+        "optional": false
+      },
+      "parameters": {
+        "type": "TSTypeReference",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "SphereGeometry",
+    {
+      "radius": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "widthSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "heightSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "phiStart": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "phiLength": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "thetaStart": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "thetaLength": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "RingGeometry",
+    {
+      "innerRadius": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "outerRadius": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "thetaSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "phiSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "thetaStart": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "thetaLength": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "PlaneGeometry",
+    {
+      "width": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "height": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "widthSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "heightSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "LatheGeometry",
+    {
+      "points": {
+        "type": "TSArrayType",
+        "optional": false
+      },
+      "segments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "phiStart": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "phiLength": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "ShapeGeometry",
+    {
+      "shapes": {
+        "type": [
+          "Shape",
+          "TSArrayType"
+        ],
+        "optional": false
+      },
+      "curveSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "ExtrudeGeometry",
+    {
+      "shapes": {
+        "type": [
+          "Shape",
+          "TSArrayType"
+        ],
+        "optional": false
+      },
+      "options": {
+        "type": "TSTypeReference",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "EdgesGeometry",
+    {
+      "geometry": {
+        "type": [
+          "BufferGeometry",
+          "Geometry"
+        ],
+        "optional": false
+      },
+      "thresholdAngle": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "ConeGeometry",
+    {
+      "radius": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "height": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "radialSegment": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "heightSegment": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "openEnded": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "thetaStart": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "thetaLength": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "CylinderGeometry",
+    {
+      "radiusTop": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "radiusBottom": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "height": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "radialSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "heightSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "openEnded": {
+        "type": "TSBooleanKeyword",
+        "optional": true
+      },
+      "thetaStart": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "thetaLength": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "radiusSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "CircleGeometry",
+    {
+      "radius": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "segments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "thetaStart": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "thetaLength": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ],
+  [
+    "BoxGeometry",
+    {
+      "width": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "height": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "depth": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "widthSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "heightSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      },
+      "depthSegments": {
+        "type": "TSNumberKeyword",
+        "optional": true
+      }
+    }
+  ]
+]
