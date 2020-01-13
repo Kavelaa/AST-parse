@@ -1,6 +1,6 @@
 [
   [
-    "ShadowMaterialParameters",
+    "ShadowMaterial",
     {
       "color": {
         "type": [
@@ -13,7 +13,7 @@
     }
   ],
   [
-    "SpriteMaterialParameters",
+    "SpriteMaterial",
     {
       "color": {
         "type": [
@@ -48,11 +48,11 @@
     }
   ],
   [
-    "",
-    {}
+    "RawShaderMaterial",
+    "ShaderMaterialParameters"
   ],
   [
-    "ShaderMaterialParameters",
+    "ShaderMaterial",
     {
       "defines": {
         "type": "TSAnyKeyword",
@@ -109,7 +109,7 @@
     }
   ],
   [
-    "PointsMaterialParameters",
+    "PointsMaterial",
     {
       "color": {
         "type": [
@@ -144,7 +144,7 @@
     }
   ],
   [
-    "MeshPhysicalMaterialParameters",
+    "MeshPhysicalMaterial",
     {
       "reflectivity": {
         "type": "TSNumberKeyword",
@@ -159,11 +159,11 @@
         "optional": true
       },
       "sheen": {
-        "type": "TSTypeReference",
+        "type": "Color",
         "optional": true
       },
       "clearcoatNormalScale": {
-        "type": "TSTypeReference",
+        "type": "Vector2",
         "optional": true
       },
       "clearcoatNormalMap": {
@@ -176,7 +176,7 @@
     }
   ],
   [
-    "MeshStandardMaterialParameters",
+    "MeshStandardMaterial",
     {
       "color": {
         "type": [
@@ -261,11 +261,11 @@
         "optional": true
       },
       "normalMapType": {
-        "type": "TSTypeReference",
+        "type": "NormalMapTypes",
         "optional": true
       },
       "normalScale": {
-        "type": "TSTypeReference",
+        "type": "Vector2",
         "optional": true
       },
       "displacementMap": {
@@ -342,7 +342,7 @@
     }
   ],
   [
-    "MeshPhongMaterialParameters",
+    "MeshPhongMaterial",
     {
       "color": {
         "type": [
@@ -435,11 +435,11 @@
         "optional": true
       },
       "normalMapType": {
-        "type": "TSTypeReference",
+        "type": "NormalMapTypes",
         "optional": true
       },
       "normalScale": {
-        "type": "TSTypeReference",
+        "type": "Vector2",
         "optional": true
       },
       "displacementMap": {
@@ -479,7 +479,7 @@
         "optional": true
       },
       "combine": {
-        "type": "TSTypeReference",
+        "type": "Combine",
         "optional": true
       },
       "reflectivity": {
@@ -521,7 +521,7 @@
     }
   ],
   [
-    "MeshToonMaterialParameters",
+    "MeshToonMaterial",
     {
       "gradientMap": {
         "type": [
@@ -533,7 +533,7 @@
     }
   ],
   [
-    "MeshNormalMaterialParameters",
+    "MeshNormalMaterial",
     {
       "bumpMap": {
         "type": [
@@ -554,11 +554,11 @@
         "optional": true
       },
       "normalMapType": {
-        "type": "TSTypeReference",
+        "type": "NormalMapTypes",
         "optional": true
       },
       "normalScale": {
-        "type": "TSTypeReference",
+        "type": "Vector2",
         "optional": true
       },
       "displacementMap": {
@@ -599,7 +599,7 @@
     }
   ],
   [
-    "MeshLambertMaterialParameters",
+    "MeshLambertMaterial",
     {
       "color": {
         "type": [
@@ -679,7 +679,7 @@
         "optional": true
       },
       "combine": {
-        "type": "TSTypeReference",
+        "type": "Combine",
         "optional": true
       },
       "reflectivity": {
@@ -721,7 +721,7 @@
     }
   ],
   [
-    "MeshDepthMaterialParameters",
+    "MeshDepthMaterial",
     {
       "alphaMap": {
         "type": [
@@ -731,7 +731,7 @@
         "optional": true
       },
       "depthPacking": {
-        "type": "TSTypeReference",
+        "type": "DepthPackingStrategies",
         "optional": true
       },
       "displacementMap": {
@@ -760,7 +760,7 @@
     }
   ],
   [
-    "MeshDistanceMaterialParameters",
+    "MeshDistanceMaterial",
     {
       "alphaMap": {
         "type": [
@@ -793,13 +793,13 @@
         "optional": true
       },
       "referencePosition": {
-        "type": "TSTypeReference",
+        "type": "Vector3",
         "optional": true
       }
     }
   ],
   [
-    "MeshBasicMaterialParameters",
+    "MeshBasicMaterial",
     {
       "color": {
         "type": [
@@ -853,7 +853,7 @@
         "optional": true
       },
       "combine": {
-        "type": "TSTypeReference",
+        "type": "Combine",
         "optional": true
       },
       "reflectivity": {
@@ -891,7 +891,7 @@
     }
   ],
   [
-    "MeshMatcapMaterialParameters",
+    "MeshMatcapMaterial",
     {
       "color": {
         "type": [
@@ -934,11 +934,11 @@
         "optional": true
       },
       "normalMapType": {
-        "type": "TSTypeReference",
+        "type": "NormalMapTypes",
         "optional": true
       },
       "normalScale": {
-        "type": "TSTypeReference",
+        "type": "Vector2",
         "optional": true
       },
       "displacementMap": {
@@ -978,7 +978,7 @@
     }
   ],
   [
-    "LineDashedMaterialParameters",
+    "LineDashedMaterial",
     {
       "color": {
         "type": [
@@ -1007,7 +1007,7 @@
     }
   ],
   [
-    "LineBasicMaterialParameters",
+    "LineBasicMaterial",
     {
       "color": {
         "type": [
@@ -1032,172 +1032,7 @@
     }
   ],
   [
-    "MaterialParameters",
-    {
-      "alphaTest": {
-        "type": "TSNumberKeyword",
-        "optional": true
-      },
-      "blendDst": {
-        "type": "TSTypeReference",
-        "optional": true
-      },
-      "blendDstAlpha": {
-        "type": "TSNumberKeyword",
-        "optional": true
-      },
-      "blendEquation": {
-        "type": "TSTypeReference",
-        "optional": true
-      },
-      "blendEquationAlpha": {
-        "type": "TSNumberKeyword",
-        "optional": true
-      },
-      "blending": {
-        "type": "TSTypeReference",
-        "optional": true
-      },
-      "blendSrc": {
-        "type": [
-          "BlendingSrcFactor",
-          "BlendingDstFactor"
-        ],
-        "optional": true
-      },
-      "blendSrcAlpha": {
-        "type": "TSNumberKeyword",
-        "optional": true
-      },
-      "clipIntersection": {
-        "type": "TSBooleanKeyword",
-        "optional": true
-      },
-      "clippingPlanes": {
-        "type": "TSArrayType",
-        "optional": true
-      },
-      "clipShadows": {
-        "type": "TSBooleanKeyword",
-        "optional": true
-      },
-      "colorWrite": {
-        "type": "TSBooleanKeyword",
-        "optional": true
-      },
-      "depthFunc": {
-        "type": "TSTypeReference",
-        "optional": true
-      },
-      "depthTest": {
-        "type": "TSBooleanKeyword",
-        "optional": true
-      },
-      "depthWrite": {
-        "type": "TSBooleanKeyword",
-        "optional": true
-      },
-      "fog": {
-        "type": "TSBooleanKeyword",
-        "optional": true
-      },
-      "name": {
-        "type": "TSStringKeyword",
-        "optional": true
-      },
-      "opacity": {
-        "type": "TSNumberKeyword",
-        "optional": true
-      },
-      "polygonOffset": {
-        "type": "TSBooleanKeyword",
-        "optional": true
-      },
-      "polygonOffsetFactor": {
-        "type": "TSNumberKeyword",
-        "optional": true
-      },
-      "polygonOffsetUnits": {
-        "type": "TSNumberKeyword",
-        "optional": true
-      },
-      "precision": {
-        "type": [
-          "TSLiteralType",
-          "TSLiteralType",
-          "TSLiteralType",
-          "TSNullKeyword"
-        ],
-        "optional": true
-      },
-      "premultipliedAlpha": {
-        "type": "TSBooleanKeyword",
-        "optional": true
-      },
-      "dithering": {
-        "type": "TSBooleanKeyword",
-        "optional": true
-      },
-      "flatShading": {
-        "type": "TSBooleanKeyword",
-        "optional": true
-      },
-      "side": {
-        "type": "TSTypeReference",
-        "optional": true
-      },
-      "shadowSide": {
-        "type": "TSTypeReference",
-        "optional": true
-      },
-      "toneMapped": {
-        "type": "TSBooleanKeyword",
-        "optional": true
-      },
-      "transparent": {
-        "type": "TSBooleanKeyword",
-        "optional": true
-      },
-      "vertexColors": {
-        "type": "TSTypeReference",
-        "optional": true
-      },
-      "vertexTangents": {
-        "type": "TSBooleanKeyword",
-        "optional": true
-      },
-      "visible": {
-        "type": "TSBooleanKeyword",
-        "optional": true
-      },
-      "stencilWrite": {
-        "type": "TSBooleanKeyword",
-        "optional": true
-      },
-      "stencilFunc": {
-        "type": "TSTypeReference",
-        "optional": true
-      },
-      "stencilRef": {
-        "type": "TSNumberKeyword",
-        "optional": true
-      },
-      "stencilMask": {
-        "type": "TSNumberKeyword",
-        "optional": true
-      },
-      "stencilFail": {
-        "type": "TSTypeReference",
-        "optional": true
-      },
-      "stencilZFail": {
-        "type": "TSTypeReference",
-        "optional": true
-      },
-      "stencilZPass": {
-        "type": "TSTypeReference",
-        "optional": true
-      }
-    }
+    "Material",
+    {}
   ]
 ]

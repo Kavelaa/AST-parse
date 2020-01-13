@@ -105,7 +105,7 @@
     "TubeGeometry",
     {
       "path": {
-        "type": "TSTypeReference",
+        "type": "Curve",
         "optional": false
       },
       "tubularSegments": {
@@ -188,7 +188,7 @@
         "optional": false
       },
       "parameters": {
-        "type": "TSTypeReference",
+        "type": "TextGeometryParameters",
         "optional": true
       }
     }
@@ -324,7 +324,7 @@
         "optional": false
       },
       "options": {
-        "type": "TSTypeReference",
+        "type": "ExtrudeGeometryOptions",
         "optional": true
       }
     }
@@ -393,7 +393,7 @@
         "type": "TSNumberKeyword",
         "optional": true
       },
-      "radialSegments": {
+      "radiusSegments": {
         "type": "TSNumberKeyword",
         "optional": true
       },
@@ -410,10 +410,6 @@
         "optional": true
       },
       "thetaLength": {
-        "type": "TSNumberKeyword",
-        "optional": true
-      },
-      "radiusSegments": {
         "type": "TSNumberKeyword",
         "optional": true
       }
